@@ -24,7 +24,7 @@ fence.y = display.contentHeight-50
 local physics = require( "physics" )
 physics.start()
 
-physics.addBody( platform, "static" )
+physics.addBody( platform, "static", {bounce=0} )
 physics.addBody( balloon, "dynamic", { radius=50, bounce=0.03 } )
 
 physics.addBody( fence, "dynamic" )
